@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../api/axiosInstance";
 import type { DoctorDetailsData } from "../types/doctorbyid";
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
 
 const DoctorDetails = () => {
     const { id } = useParams<{ id: string }>();
