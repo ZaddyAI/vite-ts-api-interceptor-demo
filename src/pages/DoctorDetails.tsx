@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import api from "../api/axiosInstance";
 import type { DoctorDetailsData } from "../types/doctorbyid";
 import ContactForm from "../components/ContactForm";
+import CallBackDemo from "../components/UseCallBack";
+import MemoDemo from "../components/MemoDemo";
 
 const DoctorDetails = () => {
     const { id } = useParams<{ id: string }>();
@@ -66,7 +68,12 @@ const DoctorDetails = () => {
 
             </div>
 
+            <h1>Contact Form Demo</h1>
             <ContactForm />
+            <h1>Callback Demo</h1>
+            <CallBackDemo />
+            <h1>Memo Demo</h1>
+            <MemoDemo/>
         </>
     );
 };
